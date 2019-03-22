@@ -1,17 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Harry Potter News Scraping </title>
-  </head>
-  <body>
-    <div id="wrapper">
-      <h1>Harry Potter Scrapping</h1>
-      <h2></h2>
-      <div id="articles"></div>
-      <div id="notes"></div>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harry Potter News Scrapping</title>
+
+  <!-- Google fonts  links for the different Fonts used-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Pacifico|Fredoka+One|Teko" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- Css and Images link for the html-->
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="app.js"></script>
+
+</head>
+
+<body>
+  <!-- Main Header-->
+  <header>
+    <h5 class="mainHeader w-100 mt-2 pl-5">
+      <i class="fas fa-hat-wizard" id="hat-magic"></i>
+      Harry Potter Latest News
+      <i class="fas fa-hat-wizard" id="hat-magic"></i>
+    </h5>
+  </header>
+
+
+  <div class="container">
+
+    <!-- Header row with display message for guiding the user  -->
+    <div class="row" id="header-row">
+      <div class="col-md-3" id="patronus">
+        <img src="images/patronus.gif" />
+      </div>
+      <div class="col-md-9">
+        <!-- Buttons Row -->
+        <div class="row" id="buttons-row">
+    
+          <div class="col-md-3">
+            <button type="button" class="btn btn-outline-info" id="scrapeBtn">
+              <i class="fab fa-searchengin" id="searchImg"> </i>
+              Scrape Latest
+            </button>
+          </div>
+
+          <div class="col-md-3">
+            <button type="button" class="btn btn-outline-info" id="showAll">
+                <i class="fas fa-list-ul"></i>
+              Show All</button>
+          </div>
+          <div class="col-md-4">
+            <button type="button" class="btn btn-outline-info" id="showSaved">
+                <i class='fas fa-heart'></i>
+            Show Favorites</button>
+          </div>
+
+          <div class="col-md-2">
+            <button type="button" class="btn btn-outline-info" id="clearAll">
+              <i class="fas fa-broom"></i>
+              Clear All</button>
+          </div>
+        </div>
+        <!------ End of Buttons Row --------->
+        <div id="articles">
+
+        </div>
+      </div>
+
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-  </body>
+
+  </div>
+
+</body>
+
 </html>

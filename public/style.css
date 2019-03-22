@@ -1,43 +1,74 @@
-body 
+/* Basic Style to apply over the main content */
+body
 {
-     background-color: #F2F6D0 
+    /* background-color: #030822; */
+    background-color: #01030E;
+    color: white;
+    /* background-image: url("images/Background.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-size: 150%;
+    font-family: 'Courgette', cursive;
+    text-align: center;
 }
-
-#wrapper 
+#patronus
 {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5%;
+    padding-top : 10%;
 }
-
-#articles 
+#patronus img
 {
-    display: inline-block;
-    overflow: auto;
-    width: 60%;
-    height: 700px;
-}
-
-#notes 
-{
-    float: right;
-    width: 30%;
-}
-
-textarea, input 
-{
-    display: block;
     width: 100%;
-    background-color: #FCF5C7;
+}
+.btn
+{
+    background-color: black;
+}
+/* Container Height for mainting background image in middle*/
+.container
+{
+    margin: 0% 2%;
+    padding : 0%;
+    text-align: center;
 }
 
-input {
-    height: 36px;
-    font-size: 24px;
+/* Style for Main Header with game name */
+.mainHeader
+{
+    /* font-family: 'Courgette', cursive; */
+    font-size: 3em;
+    text-align: center;
+    color : white;
+    width: 50%;
+    margin : auto;
 }
 
-textarea {
-    height: 200px;
-    font-size: 18px;
+/* Style for header content in the battle scene */
+.header-font
+{
+    font-family: 'Fredoka One', cursive;
+    font-size: 2em;
+    background-color: black;
+    padding:2px;
 }
+
+#searchImg
+{
+    font-size: 20px;
+}
+
+.row
+{
+    padding : 10px;
+}
+#articles div
+{
+    background-color: black;
+    width : 100%;
+    font-family: "Magorian Regular",Georgia,Times,"Times New Roman",serif;
+}
+#articles img
+{
+    width: 50%;
+}
+
+
